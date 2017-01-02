@@ -1,0 +1,14 @@
+dino_says:
+  path: /the/dino/says/{count}
+  defaults:
+    _controller: Drupal\dino_roar\Controller\RoarController::roar
+  requirements:
+    _permission: 'access content'
+dino_roar.roar_block_form:
+  path: '/dino_roar/form/roar_block_form'
+  defaults:
+    _form: '\Drupal\dino_roar\Form\roar_block_form'
+    _title: 'roar_block_form'
+  requirements:
+    _access: 'TRUE'
+  
